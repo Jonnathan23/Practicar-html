@@ -1,0 +1,127 @@
+/* Reicio para que 1rem = 10px*/
+:root {
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --fontMain:"Roboto", sans-serif;
+    --tomato: hsl(4, 100%, 67%);
+    --pink: hsl(333, 78%, 51%);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--DarkSlateGrey);
+    font-family: var(--fontMain);
+}
+
+/** Main */
+main{
+    width: 100%;    
+    height: 100%;
+    min-height: 50rem;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** Contenedor */
+.contenedor{
+    background-color: var(--White);
+    padding: 2rem;
+    border-radius: 2.5rem;
+
+    width: 80%;
+    max-width: 100rem;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+}
+/** Contenedor izquierdo */
+.stay{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.stay h2{
+    font-size: 4rem;
+}
+
+/*? LISTA*/
+.stay ul{
+    list-style: none;
+    width: 85%;    
+}
+
+.stay ul li{
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*? Formulario */
+
+.stay form{
+    border: none;
+    min-height: 15rem;
+    width: 80%;
+}
+
+form fieldset{
+    border: none;
+    display: grid;
+    row-gap: 2rem;
+
+}
+
+fieldset input{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    border: .1rem solid var(--Grey);    
+}
+
+fieldset .boton {
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);    
+}
+
+fieldset .boton:hover {        
+    background-image: linear-gradient(to right, var(--pink) 0%, var(--tomato) ) ;
+    
+}
+
+
+/** Contenedor derecho */
+.stay .img{
+    display: flex;
+    align-items: center;
+}
+
+.img img{
+    width: 95%;
+    height: 100%;
+    border-radius: 2rem;
+
+}
