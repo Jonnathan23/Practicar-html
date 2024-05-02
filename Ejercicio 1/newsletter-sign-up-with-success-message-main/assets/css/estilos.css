@@ -75,7 +75,7 @@ main{
 
 .stay ul li{
     display: flex;
-    height: 5rem;
+    height: 6rem;
     align-items: center;
     gap: 1rem;
 }
